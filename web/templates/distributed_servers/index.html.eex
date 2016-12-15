@@ -1,0 +1,12 @@
+<div class="jumbotron">
+  <h2>Node.list</h2>
+  <%= if length(@servers) === 0 do %>
+    No connected nodes.
+  <% else %>
+    <ul>
+      <%= for node <- @servers do %>
+        <li><%= node %>
+      <% end %>
+    </ul>
+  <% end %>
+</div>
