@@ -23,8 +23,8 @@ config :logger, :console,
   metadata: [:request_id]
 
 config :peerage, via: Peerage.Via.Dns,
-  dns_name: "peeragetest",
-  app_name: "distributed1"
+  dns_name: "distributed-phoenix-test",
+  app_name: "distributed-phoenix-test"
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
