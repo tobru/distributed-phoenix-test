@@ -20,6 +20,7 @@ config :distributed_phoenix_test, SKT.DistributedPhoenixTest.Endpoint,
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
+  level: :debug,
   metadata: [:request_id]
 
 config :peerage, via: Peerage.Via.Dns,
