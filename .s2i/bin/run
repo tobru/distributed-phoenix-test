@@ -10,4 +10,4 @@
 export PATH=/opt/node-v6.3.0-linux-x64/bin:$PATH
 export LANG=en_US.utf8
 #export MIX_ENV=prod
-exec elixir --sname distributed-phoenix-test --cookie MYyco00kie -S mix phoenix.server
+exec elixir --name distributed-phoenix-test --cookie MYyco00kie -S mix phoenix.server
