@@ -24,7 +24,7 @@ config :logger, :console,
   metadata: [:request_id]
 
 config :peerage, via: Peerage.Via.Dns,
-  dns_name: "distributed-phoenix-test",
+  dns_name: "distributed-phoenix-test.appuio-demo2495.svc.cluster.local",
   app_name: "distributed-phoenix-test"
 
 # Import environment specific config. This must remain at the bottom
