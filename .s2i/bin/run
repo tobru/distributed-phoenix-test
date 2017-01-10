@@ -10,4 +10,5 @@
 export PATH=/opt/node-v6.3.0-linux-x64/bin:$PATH
 export LANG=en_US.utf8
 #export MIX_ENV=prod
-exec elixir --name distributed-phoenix-test@$(hostname) --cookie MYyco00kie -S mix phoenix.server
+MYIP=$(getent ahostsv4 $(hostname) | awk '{print $1}' | uniq)
+exec elixir --name distributed-phoenix-test@$MYIP --cookie MYyco00kie -S mix phoenix.server
